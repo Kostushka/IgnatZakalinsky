@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/IgnatZakalinsky/static/css/main.cc7f2ce1.css",
+    "main.js": "/IgnatZakalinsky/static/js/main.995a8338.js",
+    "static/js/787.66cb4309.chunk.js": "/IgnatZakalinsky/static/js/787.66cb4309.chunk.js",
+    "static/media/avatar.png": "/IgnatZakalinsky/static/media/avatar.d947cb9d0d13765666b6.png",
+    "index.html": "/IgnatZakalinsky/index.html",
+    "main.cc7f2ce1.css.map": "/IgnatZakalinsky/static/css/main.cc7f2ce1.css.map",
+    "main.995a8338.js.map": "/IgnatZakalinsky/static/js/main.995a8338.js.map",
+    "787.66cb4309.chunk.js.map": "/IgnatZakalinsky/static/js/787.66cb4309.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cc7f2ce1.css",
+    "static/js/main.995a8338.js"
+  ]
+}
