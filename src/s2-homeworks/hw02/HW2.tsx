@@ -44,31 +44,34 @@ export const filterAffairs = (
         case 'all':
             return affairs;
         case 'high':
-            return affairs.filter((el) => el.priority === 'high');
         case 'middle':
-            return affairs.filter((el) => el.priority === 'middle');
         case 'low':
-            return affairs.filter((el) => el.priority === 'low');
+            return affairs.filter((el) => el.priority === filter);
+        // case 'middle':
+        //     return affairs.filter((el) => el.priority === 'middle');
+        // case 'low':
+        //     return affairs.filter((el) => el.priority === 'low');
     }
 };
 export const deleteAffair = (
     affairs: Array<AffairType>,
     _id: number
 ): Array<AffairType> => {
-    switch (_id) {
-        case 1:
-            return affairs.filter((el) => el._id !== 1);
-        case 2:
-            return affairs.filter((el) => el._id !== 2);
-        case 3:
-            return affairs.filter((el) => el._id !== 3);
-        case 4:
-            return affairs.filter((el) => el._id !== 4);
-        case 5:
-            return affairs.filter((el) => el._id !== 5);
-        default:
-            return affairs;
-    }
+    return affairs.filter((el) => el._id !== _id);
+    // switch (_id) {
+    //     case 1:
+    //         return affairs.filter((el) => el._id !== 1);
+    //     case 2:
+    //         return affairs.filter((el) => el._id !== 2);
+    //     case 3:
+    //         return affairs.filter((el) => el._id !== 3);
+    //     case 4:-
+    //         return affairs.filter((el) => el._id !== 4);
+    //     case 5:
+    //         return affairs.filter((el) => el._id !== 5);
+    //     default:
+    //         return affairs;
+    // }
 };
 
 function HW2() {
@@ -82,7 +85,7 @@ function HW2() {
 
     return (
         <div id={'hw2'}>
-            <div className={s2.hwTitle}>Homework #2</div>
+            <div className={s2.hwTitle}>Hometask № 2</div>
             <div className={s2.hw}>
                 <Affairs
                     data={filteredAffairs}

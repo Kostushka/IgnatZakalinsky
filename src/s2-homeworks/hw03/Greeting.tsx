@@ -1,16 +1,16 @@
-import React, {ChangeEvent, KeyboardEvent} from 'react'
-import s from './Greeting.module.css'
+import React, { ChangeEvent, KeyboardEvent } from 'react';
+import s from './Greeting.module.css';
 
 type GreetingPropsType = {
-    name: any // need to fix any
-    setNameCallback: any // need to fix any
-    addUser: any // need to fix any
-    onBlur: any // need to fix any
-    onEnter: any // need to fix any
-    error: any // need to fix any
-    totalUsers: any // need to fix any
-    lastUserName?: any // need to fix any
-}
+    name: string; // need to fix any
+    setNameCallback: (e: React.ChangeEvent<HTMLInputElement>) => void; // need to fix any
+    addUser: () => void; // need to fix any
+    onBlur: () => void; // need to fix any
+    onEnter: (e: React.KeyboardEvent<HTMLInputElement>) => void; // need to fix any
+    error: string; // need to fix any
+    totalUsers: number; // need to fix any
+    lastUserName?: string; // need to fix any
+};
 
 // презентационная компонента (для верстальщика)
 const Greeting: React.FC<GreetingPropsType> = (
@@ -25,15 +25,13 @@ const Greeting: React.FC<GreetingPropsType> = (
         lastUserName,
     } // деструктуризация пропсов
 ) => {
-    const inputClass = s.errorInput // need to fix with (?:)
+    const inputClass = !error ? s.input : s.errorInput; // need to fix with (?:)
 
     return (
         <div id={'hw3-form'} className={s.greetingForm}>
             <div className={s.text}>
                 {'Людей добавили: '}
-                <span id={'hw3-users-total'}>
-                    {totalUsers}
-                </span>
+                <span id={'hw3-users-total'}>{totalUsers}</span>
             </div>
 
             <div className={s.inputAndButtonContainer}>
@@ -46,9 +44,11 @@ const Greeting: React.FC<GreetingPropsType> = (
                         onKeyDown={onEnter}
                         onBlur={onBlur}
                     />
-                    <div id={'hw3-error'} className={s.error}>
-                        {error}
-                    </div>
+                    {error && (
+                        <div id={'hw3-error'} className={s.error}>
+                            {error}
+                        </div>
+                    )}
                 </div>
 
                 <button
@@ -57,7 +57,7 @@ const Greeting: React.FC<GreetingPropsType> = (
                     className={s.button}
                     disabled={!name.trim()}
                 >
-                    add
+                    Add
                 </button>
             </div>
 
@@ -67,7 +67,7 @@ const Greeting: React.FC<GreetingPropsType> = (
                 </div>
             )}
         </div>
-    )
-}
+    );
+};
 
-export default Greeting
+export default Greeting;
