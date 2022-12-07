@@ -19,7 +19,7 @@ import GreetingContainer from './GreetingContainer';
 
 // types
 export type UserType = {
-    _id: number; // need to fix any
+    _id: string; // need to fix any
     name: string; // need to fix any
 };
 
@@ -31,7 +31,7 @@ export const pureAddUserCallback = (
     // need to fix any
     const user = {
         // need to fix
-        _id: Math.random(),
+        _id: v1(),
         name,
     };
     setUsers([...users, user]);
@@ -39,6 +39,7 @@ export const pureAddUserCallback = (
 
 const HW3 = () => {
     const [users, setUsers] = useState<Array<UserType>>([]); // need to fix any
+    console.log(users);
 
     const addUserCallback = (name: string) => {
         // need to fix any
