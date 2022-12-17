@@ -1,5 +1,17 @@
 .buttonsContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+    margin-top: 24px;
 }
 
 .editableSpanContainer {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+    color: #0080ff;
 }
