@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/IgnatZakalinsky/static/css/main.15307eae.css",
-    "main.js": "/IgnatZakalinsky/static/js/main.f5ce14c5.js",
+    "main.js": "/IgnatZakalinsky/static/js/main.d911409f.js",
     "static/js/787.66cb4309.chunk.js": "/IgnatZakalinsky/static/js/787.66cb4309.chunk.js",
     "static/media/avatar.png": "/IgnatZakalinsky/static/media/avatar.d947cb9d0d13765666b6.png",
     "static/media/404.svg": "/IgnatZakalinsky/static/media/404.dae7af4892f2a3abe805a174178919f2.svg",
@@ -11,11 +11,11 @@
     "static/media/checked.svg": "/IgnatZakalinsky/static/media/checked.0b6a1bcf5d417ff0a947.svg",
     "static/media/burger.svg": "/IgnatZakalinsky/static/media/burger.e4e6b98e4ee0b2dfcd76d02a9eed2e34.svg",
     "main.15307eae.css.map": "/IgnatZakalinsky/static/css/main.15307eae.css.map",
-    "main.f5ce14c5.js.map": "/IgnatZakalinsky/static/js/main.f5ce14c5.js.map",
+    "main.d911409f.js.map": "/IgnatZakalinsky/static/js/main.d911409f.js.map",
     "787.66cb4309.chunk.js.map": "/IgnatZakalinsky/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.15307eae.css",
-    "static/js/main.f5ce14c5.js"
+    "static/js/main.d911409f.js"
   ]
 }
